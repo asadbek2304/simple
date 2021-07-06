@@ -1,0 +1,82 @@
+.link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: $text-light;
+  text-decoration: none;
+
+  &:hover {
+    color: $text-dark;
+    cursor: pointer;
+  }
+}
+
+.active {
+  color: $text-dark;
+}
+
+.titr {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  margin: 0 0 0 3.6rem;
+  color: $color-primary;
+  margin-top: 3rem;
+  position: relative;
+  &::before {
+    content: "";
+    width: 3.6rem;
+    height: 3px;
+    position: absolute;
+    background: $color-primary;
+    left: -3.6rem;
+    bottom: 8px;
+  }
+}
+
+.titr2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: $color-primary;
+}
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 74px;
+  color: $text-dark;
+  width: 90%;
+
+  margin-right: 0;
+
+  &-sub {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+
+    letter-spacing: 0.02em;
+    color: $text-light;
+  }
+}
+
+.content {
+  h4 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    color: $text-dark;
+    margin: 0.1rem 0;
+  }
+  h6 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: $text-light;
+    margin: 0.1rem 0;
+  }
+}

@@ -1,0 +1,70 @@
+.section {
+  height: 100vh;
+  position: relative;
+  &__content {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &--item {
+      width: 100%;
+    }
+  }
+
+  &__center {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+    .mail {
+      position: absolute;
+      bottom: 40%;
+      left: 0;
+    }
+  }
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.ts {
+  display: flex;
+  justify-content: space-between;
+
+  .button {
+    height: 3rem;
+  }
+}
+
+.subscribe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  .input-group {
+    position: relative;
+    width: 706px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    transition: all 0.5s;
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 40px rgba(0, 0, 0, 0.25);
+    }
+    input {
+      border: none;
+      height: 100%;
+      width: 90%;
+      outline: none;
+      font-size: 2rem;
+    }
+  }
+}

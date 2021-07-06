@@ -1,0 +1,25 @@
+.navbar{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    justify-content: space-between;
+
+    &__logo{
+        height: 1.8rem;
+        img{
+            height: 100%;
+        }
+    }
+
+    &__links{
+        &--item{
+            &:not(:last-child){
+                margin-right: 5rem;
+            }
+            
+        }
+    }
+}
